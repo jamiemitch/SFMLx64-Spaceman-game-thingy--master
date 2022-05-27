@@ -435,11 +435,6 @@ int main() {
                                 app.create(VideoMode(windowWidthX, windowHeightX), "Platformer");
                             }
 
-                            
-                            
-                            //OPTIONS.clear();
-                            
-                            
                             LOAD.display();
                             
                         }
