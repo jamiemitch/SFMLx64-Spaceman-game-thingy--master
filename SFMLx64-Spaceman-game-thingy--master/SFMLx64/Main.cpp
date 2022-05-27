@@ -193,11 +193,6 @@ int main() {
         }
         
 
-        //direction
-       // if (playerObject.yvel > 1) {
-         //   fall.play();
-        //}
-
         int x = mainMenu.MainMenuPressed();
         Vector2i mousePos = Mouse::getPosition(app);
        // std::cout << mousePos.x << "-" << mousePos.y << endl;
@@ -229,9 +224,6 @@ int main() {
         }
 
         
-        
-                //std::cout << x << endl;
-                //Play
                 if (x == 0)
                 {
                     app.close();
@@ -284,11 +276,7 @@ int main() {
                                 }
                             }
                         }
-                        //OPTIONS.close();
-                        //ABOUT.close();
-                        //Play.clear();
-                        //Play.display();
-                        sf::RectangleShape background(sf::Vector2f(5000, 5000));
+                        ground(sf::Vector2f(5000, 5000));
                         background.setFillColor(sf::Color(50, 50, 50));
                         background.setPosition(sf::Vector2f(-2000, -1000));
 
@@ -331,7 +319,7 @@ int main() {
                         
 
 
-                        //animations
+                       //animations
                        //move right
                         if (playerObject.xvel > 0 && playerObject.yvel == 0) {
                             if (clock.getElapsedTime().asSeconds() > 0.2f) {
@@ -531,11 +519,7 @@ int main() {
                             OPTIONS.close();
                             app.create(VideoMode(windowWidthX, windowHeightX), "Platformer");
                         }
-                      
-                        //app.close();
                         OPTIONS.clear();
-                        //ABOUT.close();
-                        
                         OPTIONS.draw(Options1);
 
                         if (mousePos.x > 1281 && mousePos.x < 1496 && mousePos.y > 737 && mousePos.y < 837) {
