@@ -9,19 +9,6 @@
 #include "platformClass.h"
 #include "enemyClass.h"
 
-
-//TODO LIST
-//World map assets
-//Make the ave button work in options
-//Make Load assets
-//Make a collidable class (Enemy)
-//Make the platform
-//Make a start and end to each level (maybe draw flag assset or something)
-
-
-
-
-
 int windowWidth = 1536;
 int windowHeight = 865;
 
@@ -36,12 +23,9 @@ sf::View view2(sf::Vector2f(350.f, 300.f), sf::Vector2f(1536.f, 865.f));
 int main() {
 
     std::cout << windowWidth << windowHeight << endl;
+    
     //Create the main window
-    
-   
-    
     RenderWindow app(VideoMode(windowWidthX, windowHeightX), "Platformer");
-    //void sf::Window::setFramerateLimit(20);
     
     
    
@@ -621,14 +605,7 @@ int main() {
         }
         
         mainMenu.draw(app);
-        app.display();
-
-       
-
-        //Clear screen
-        //app.draw(BackgroundSprite);
-        //Update the window
-       
+        app.display();     
 
 
     }
